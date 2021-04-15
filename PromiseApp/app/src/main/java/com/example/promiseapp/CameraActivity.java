@@ -55,16 +55,18 @@ public class CameraActivity extends AppCompatActivity {
             }
         }
 
-        btn_photo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.btn_photo:
-                        dispatchTakePictureIntent();
-                        break;
-                }
-            }
-        });
+        dispatchTakePictureIntent();
+
+//        btn_photo.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                switch (v.getId()) {
+//                    case R.id.btn_photo:
+//                        dispatchTakePictureIntent();
+//                        break;
+//                }
+//            }
+//        });
     }
 
     // 권한 요청
