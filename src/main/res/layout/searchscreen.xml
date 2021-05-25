@@ -13,11 +13,28 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/search"
-            android:layout_width="match_parent"
-            android:layout_height="386dp"
-            android:layout_marginTop="145dp"
-            android:src="@drawable/search" />
+            android:id="@+id/image_camera"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="137dp"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/search_camera" />
+
+        <ImageView
+            android:id="@+id/image_name"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="286dp"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/search_name"/>
+
+        <ImageView
+            android:id="@+id/image_shape"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/search_shape"/>
 
         <Button
             android:id="@+id/search_camera"
