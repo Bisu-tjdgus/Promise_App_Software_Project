@@ -16,52 +16,50 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class explainScreen extends AppCompatActivity {
+public class explainScreen3 extends AppCompatActivity {
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
 
-    private TextView explainkorname, explaincolor, explainmedication, explainprecaution;
-    private Button nextbutton;
+    private TextView explainkorname, explainprecaution;
+
+    private Button previousbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.explainscreen);
+        setContentView(R.layout.explainscreen3);
 
 
         explainkorname = (TextView)findViewById(R.id.expliankorname);
-        explaincolor = (TextView)findViewById(R.id.explaincolor);
-        explainmedication = (TextView)findViewById(R.id.explainmedication);
         explainprecaution = (TextView)findViewById(R.id.explainprecaution);
-        nextbutton = (Button)findViewById(R.id.nextbutton);
 
+        previousbutton = (Button)findViewById(R.id.previousbutton);
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
 
+
                 for(DataSnapshot ds : dataSnapshot.getChildren()) {
                     String key = ds.getKey();
-                    String color = ds.child("색깔").getValue(String.class);
-                    String medication = ds.child("복약").getValue(String.class);
-                    String precaution = ds.child("용법").getValue(String.class);
-
+                    String precaution = ds.child("주의").getValue(String.class);
                     explainkorname.setText(key);
-                    explaincolor.setText(color);
-                    explainmedication.setText(medication);
                     explainprecaution.setText(precaution);
                 }
 
             }
+
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
-        nextbutton.setOnClickListener(new View.OnClickListener() {
+
+        previousbutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -69,8 +67,6 @@ public class explainScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
 
 
 

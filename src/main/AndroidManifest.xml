@@ -29,6 +29,8 @@
         <activity android:name=".CameraActivity"/>
         <activity android:name=".ShapeActivity"/>
         <activity android:name=".explainScreen"/>
+        <activity android:name=".explainScreen2"/>
+        <activity android:name=".explainScreen3"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"
