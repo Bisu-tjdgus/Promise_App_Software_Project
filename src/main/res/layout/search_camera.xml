@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photo"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sample"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20pt" />
 
     <ImageView
-        android:id="@+id/iv_photo"
+        android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="680dp" />
+        android:layout_height="221dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
+        android:id="@+id/btn_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_photo"
-        android:text="사진찍기"
-        android:background="#708090"/>
+        android:background="#708090"
+        android:text="사진찍기" />
+
+    <Button
+        android:id="@+id/enterbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#708090"
+        android:text="검색" />
 
 </LinearLayout>

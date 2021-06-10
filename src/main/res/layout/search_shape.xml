@@ -69,7 +69,7 @@
         android:layout_width="115dp"
         android:layout_height="26dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="121dp"
+        android:layout_marginTop="136dp"
         android:gravity="center"
         android:text="색상"
         android:textSize="9pt"
@@ -104,13 +104,13 @@
         android:ems="10"
         android:hint="   영문, 한글, 숫자"
         android:inputType="textMultiLine|textNoSuggestions"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintBottom_toTopOf="@+id/radioformulation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/fronttext" />
 
     <RadioGroup
-        android:id="@+id/radioGroup3"
+        android:id="@+id/radioformulation"
         android:layout_width="240dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -154,187 +154,126 @@
 
     </RadioGroup>
 
-    <Button
-        android:id="@+id/shapeButton1"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="23dp"
-        android:background="@drawable/button_select"
-        android:button="@drawable/border"
-        android:text="원형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
-
-    <Button
-        android:id="@+id/shapeButton2"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="23dp"
-        android:background="@drawable/button_select"
-        android:button="@drawable/border"
-        android:text="타원형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/shapeButton1"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
-
-    <Button
-        android:id="@+id/shapeButton3"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="23dp"
-        android:background="@drawable/button_select"
-        android:text="장방형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/shapeButton2"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
-
-    <Button
-        android:id="@+id/shapeButton4"
-        android:layout_width="80dp"
+    <RadioGroup
+        android:id="@+id/radioshape"
+        android:layout_width="244dp"
         android:layout_height="35dp"
         android:layout_marginStart="24dp"
-        android:background="@drawable/button_select"
-        android:text="반원형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton1" />
-
-    <Button
-        android:id="@+id/shapeButton5"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:text="마름모형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/shapeButton4"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/radioformulation">
 
 
-    <Button
-        android:id="@+id/shapeButton6"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:text="삼각형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/shapeButton5"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton3" />
+        <RadioButton
+            android:id="@+id/shapeButton1"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_select"
+            android:button="@drawable/border"
+            android:gravity="center"
+            android:text="원형"
+            android:textColor="#000000"
+            android:textSize="5pt"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/shapeButton7"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="155dp"
-        android:background="@drawable/button_select"
-        android:text="사각형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton4" />
+        <RadioButton
+            android:id="@+id/shapeButton2"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_select"
+            android:button="@drawable/border"
+            android:gravity="center"
+            android:text="타원형"
+            android:textColor="#000000"
+            android:textSize="5pt"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/shapeButton8"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:text="오각형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/shapeButton7"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton5" />
+        <RadioButton
+            android:id="@+id/shapeButton3"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_select"
+            android:button="@drawable/border"
+            android:gravity="center"
+            android:text="장방형"
+            android:textColor="#000000"
+            android:textSize="5pt"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/shapeButton9"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:text="팔각형"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/shapeButton8"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton6" />
 
-    <Button
+    </RadioGroup>
+
+
+    <CheckBox
         android:id="@+id/colorButton1"
         android:layout_width="60dp"
         android:layout_height="35dp"
         android:layout_marginStart="155dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/button_select"
         android:backgroundTint="#FBFBFB"
+        android:gravity="center"
         android:text="하양"
         android:textColor="#000000"
         android:textSize="5pt"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton7" />
+        app:layout_constraintTop_toBottomOf="@+id/radioshape" />
 
-    <Button
+    <CheckBox
         android:id="@+id/colorButton2"
         android:layout_width="60dp"
         android:layout_height="35dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="69dp"
         android:background="@drawable/button_select"
         android:backgroundTint="#FFEB3B"
+        android:gravity="center"
         android:text="노랑"
         android:textColor="#000000"
         android:textSize="5pt"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/colorButton1"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/radioshape" />
 
-    <Button
+    <CheckBox
         android:id="@+id/colorButton3"
         android:layout_width="60dp"
         android:layout_height="35dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="69dp"
         android:background="@drawable/button_select"
         android:backgroundTint="#F62323"
+        android:gravity="center"
         android:text="빨강"
         android:textColor="#FFFFFF"
         android:textSize="5pt"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/colorButton2"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton9" />
+        app:layout_constraintTop_toBottomOf="@+id/radioshape" />
 
-    <Button
+    <CheckBox
         android:id="@+id/colorButton4"
         android:layout_width="60dp"
         android:layout_height="35dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="69dp"
         android:background="@drawable/button_select"
         android:backgroundTint="#88FF00"
+        android:gravity="center"
         android:text="연두"
         android:textColor="#000000"
         android:textSize="5pt"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/colorButton3"
-        app:layout_constraintTop_toBottomOf="@+id/shapeButton9" />
+        app:layout_constraintTop_toBottomOf="@+id/radioshape" />
 
-    <Button
+    <CheckBox
         android:id="@+id/colorButton5"
         android:layout_width="60dp"
         android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:background="@drawable/button_select"
         android:backgroundTint="#FF6600"
+        android:gravity="center"
         android:text="주황"
         android:textColor="#FFFFFF"
         android:textSize="5pt"
@@ -342,52 +281,57 @@
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/colorButton1" />
 
-    <Button
-        android:id="@+id/colorButton6"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#FF06F7"
-        android:text="분홍"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton5"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton2" />
+    <CheckBox
+                android:id="@+id/colorButton6"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#FF06F7"
+                android:gravity="center"
+                android:text="분홍"
+                android:textColor="#000000"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton5"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton2" />
 
-    <Button
-        android:id="@+id/colorButton7"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#048200"
-        android:text="초록"
-        android:textColor="#FFFFFF"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton6"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton3" />
+            <CheckBox
+                android:id="@+id/colorButton7"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#048200"
+                android:gravity="center"
+                android:text="초록"
+                android:textColor="#FFFFFF"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton6"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton3" />
 
-    <Button
-        android:id="@+id/colorButton8"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#06BAF2"
-        android:text="청록"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton7"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton4" />
+            <CheckBox
+                android:id="@+id/colorButton8"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#06BAF2"
+                android:gravity="center"
+                android:text="청록"
+                android:textColor="#000000"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton7"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton4" />
 
-    <Button
+
+    <CheckBox
         android:id="@+id/colorButton9"
         android:layout_width="60dp"
         android:layout_height="35dp"
-        android:background="@drawable/button_select"
         android:layout_marginStart="24dp"
+        android:background="@drawable/button_select"
         android:backgroundTint="#873600"
+        android:gravity="center"
         android:text="갈색"
         android:textColor="#FFFFFF"
         android:textSize="5pt"
@@ -395,52 +339,57 @@
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/colorButton5" />
 
-    <Button
-        android:id="@+id/colorButton10"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#0022FF"
-        android:text="파랑"
-        android:textColor="#FFFFFF"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton9"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton6" />
+    <CheckBox
+                android:id="@+id/colorButton10"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#0022FF"
+                android:gravity="center"
+                android:text="파랑"
+                android:textColor="#FFFFFF"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton9"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton6" />
 
-    <Button
-        android:id="@+id/colorButton11"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#5F0D9E"
-        android:text="보라"
-        android:textColor="#FFFFFF"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton10"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton7" />
+            <CheckBox
+                android:id="@+id/colorButton11"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#5F0D9E"
+                android:gravity="center"
+                android:text="보라"
+                android:textColor="#FFFFFF"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton10"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton7" />
 
-    <Button
-        android:id="@+id/colorButton12"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#000000"
-        android:text="검정"
-        android:textColor="#FFFFFF"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton11"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton8" />
+            <CheckBox
+                android:id="@+id/colorButton12"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#352B2B"
+                android:gravity="center"
+                android:text="검정"
+                android:textColor="#FFFFFF"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton11"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton8" />
 
-    <Button
+
+    <CheckBox
         android:id="@+id/colorButton13"
         android:layout_width="60dp"
         android:layout_height="35dp"
-        android:background="@drawable/button_select"
         android:layout_marginStart="155dp"
+        android:background="@drawable/button_select"
         android:backgroundTint="#090FA5"
+        android:gravity="center"
         android:text="남색"
         android:textColor="#FFFFFF"
         android:textSize="5pt"
@@ -448,80 +397,64 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/colorButton9" />
 
-    <Button
-        android:id="@+id/colorButton14"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#AA004F"
-        android:text="자주"
-        android:textColor="#FFFFFF"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton13"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton10" />
+    <CheckBox
+                android:id="@+id/colorButton14"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#AA004F"
+                android:gravity="center"
+                android:text="자주"
+                android:textColor="#FFFFFF"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton13"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton10" />
 
-    <Button
-        android:id="@+id/colorButton15"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#878787"
-        android:text="회색"
-        android:textColor="#FFFFFF"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton14"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton11" />
+            <CheckBox
+                android:id="@+id/colorButton15"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#878787"
+                android:gravity="center"
+                android:text="회색"
+                android:textColor="#FFFFFF"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton14"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton11" />
 
-    <Button
-        android:id="@+id/colorButton16"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:background="@drawable/button_select"
-        android:backgroundTint="#FFFFFF"
-        android:text="투명"
-        android:textColor="#000000"
-        android:textSize="5pt"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/colorButton15"
-        app:layout_constraintTop_toBottomOf="@+id/colorButton12" />
+            <CheckBox
+                android:id="@+id/colorButton16"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_select"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="투명"
+                android:textColor="#000000"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/colorButton15"
+                app:layout_constraintTop_toBottomOf="@+id/colorButton12" />
 
-    <Button
-        android:id="@+id/resetbutton"
-        android:layout_width="160dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="59dp"
-        android:background="@drawable/border"
-        android:text="검색 초기화"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/enterbutton"
-        app:layout_constraintStart_toStartOf="parent"
-         />
 
     <Button
         android:id="@+id/enterbutton"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="56dp"
         android:background="@drawable/border"
-
         android:text="검색"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/resetbuttpn" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

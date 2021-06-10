@@ -38,31 +38,12 @@
 
 
     <Button
-        android:id="@+id/resetbutton"
-        android:layout_width="160dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="59dp"
-        android:background="@drawable/border"
-        android:text="검색 초기화"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/enterbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <Button
         android:id="@+id/enterbutton"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="56dp"
         android:background="@drawable/border"
 
         android:text="검색"
@@ -71,6 +52,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/resetbuttpn" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

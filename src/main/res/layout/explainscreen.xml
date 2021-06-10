@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/expliankorname"
         android:layout_width="360dp"
-        android:layout_height="56dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="240dp"
         android:inputType="textMultiLine"
@@ -21,7 +21,7 @@
     <TextView
         android:id="@+id/explaincolor"
         android:layout_width="365dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="35dp"
         android:inputType="textMultiLine"
@@ -32,7 +32,7 @@
     <TextView
         android:id="@+id/explainmedication"
         android:layout_width="365dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="35dp"
         android:inputType="textMultiLine"
@@ -43,7 +43,7 @@
     <TextView
         android:id="@+id/explainprecaution"
         android:layout_width="365dp"
-        android:layout_height="90dp"
+        android:layout_height="140dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="35dp"
         android:inputType="textMultiLine"
@@ -55,11 +55,13 @@
         android:id="@+id/medicineimage"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/nextbutton"
@@ -115,6 +117,7 @@
         android:textSize="7pt"
         app:layout_constraintBottom_toTopOf="@+id/explainprecaution"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
