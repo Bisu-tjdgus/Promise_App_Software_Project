@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/expliankorname"
+        android:layout_width="365dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:textSize="7pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/explainshape"
+        android:layout_width="365dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expliankorname" />
+
+    <TextView
+        android:id="@+id/explainingredient"
+        android:layout_width="365dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explainshape"></TextView>
+
+    <TextView
+        android:id="@+id/explainformulation"
+        android:layout_width="365dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explainingredient" />
+
+    <TextView
+        android:id="@+id/explainfront"
+        android:layout_width="365dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explainformulation" />
+
+    <TextView
+        android:id="@+id/explainback"
+        android:layout_width="365dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explainfront" />
+
+
+    <TextView
+        android:id="@+id/explainefficacy"
+        android:layout_width="365dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explainback" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:text="다음"
+        android:textSize="5pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/previousbutton"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:text="이전"
+        android:textSize="5pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="이름"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/expliankorname"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="모양"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/explainshape"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="성분정보"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/explainingredient"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="제형"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/explainformulation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="식별 앞"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/explainfront"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="식별 뒤"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/explainback"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="효능"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/explainefficacy"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
