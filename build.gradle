@@ -1,0 +1,116 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'  // Google Services plugin
+}
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.promiseapp"
+
+//        minSdkVersion 21
+        minSdkVersion 16
+
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true // 원래 없던것
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+
+////    implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
+//    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:16.2.0'
+//    implementation 'com.google.firebase:firebase-ml-vision:24.1.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:16.1.1'
+    implementation 'com.google.firebase:firebase-database:10.2.1'
+
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+//    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'com.google.firebase:firebase-ml-modeldownloader'
+    implementation 'org.tensorflow:tensorflow-lite:2.3.0'
+
+
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+//    implementation 'com.google.firebase:firebase-core:10.2.1'
+//    implementation 'com.google.firebase:firebase-analytics:15.0.0'
+//    implementation 'com.google.firebase:firebase-database:10.2.1'
+//    implementation 'androidx.appcompat:appcompat:1.2.0'
+//    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+//    implementation 'com.google.android.material:material:1.3.0'
+//    implementation 'com.google.firebase:firebase-analytics'
+//    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+//    implementation 'com.google.firebase:firebase-auth:20.0.3'
+//    implementation 'androidx.navigation:navigation-fragment:2.3.3'
+//    implementation 'androidx.navigation:navigation-ui:2.3.3'
+//    testImplementation 'junit:junit:4.+'
+//    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//    implementation platform('com.google.firebase:firebase-bom:26.7.0')
+//    implementation 'com.google.firebase:firebase-analytics'
+//    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'androidx.appcompat:appcompat:1.2.0'
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'com.google.android.material:material:1.3.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+//    testImplementation 'junit:junit:4.+'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'androidx.appcompat:appcompat:1.1.0'
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'androidx.exifinterface:exifinterface:1.2.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+//    testImplementation 'junit:junit:4.13'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+//    implementation 'com.google.firebase:firebase-analytics'
+//
+//    // Face features
+//    implementation 'com.google.mlkit:face-detection:16.0.0'
+//
+//    // Text features
+//    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:16.1.1'
+//
+//    implementation 'com.android.support:multidex:1.0.3'
+
+}
+
+apply plugin: 'com.android.application'                 //없던것 들
+apply plugin: 'com.google.gms.google-services'
